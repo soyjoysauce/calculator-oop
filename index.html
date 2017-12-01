@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
     <!--js / css file-->
     <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection"/>
+    <!--Import jQuery before materialize.js-->
+<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 </head>
 <body>
-<div class="calculator_body">
+<!-- the div below is necessary for the materialize documentation  -->
+<div class="container">
+<div class="row">         
+<div class="col s12 m8 offset-m2 l8 offset-l2 calculator_body">
     <div class="div_calculated_result_screen">
         <div class="calculated_result_screen"> </div>
     </div>
@@ -33,9 +36,7 @@
             <button class="number_button" value="8">8</button>
             <button class="number_button" value="9">9</button>
             <button class="decimal_button" value=".">.</button>
-            <div class="equals_container">
-                <button class="equals_button" value="=">=</button>
-            </div>
+            <button class="equals_button" value="=">=</button>
         </div>
         <div class="column">
             <div class="clear_container">
@@ -50,6 +51,9 @@
             </div>
         </div>
     </div>
+    </div>
 </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 </body>
 </html>
