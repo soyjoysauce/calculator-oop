@@ -41,6 +41,7 @@
 }
 
 .calculated_result_screen {
+    overflow: hidden;
     display: block;
     height: 130px;
     width: 400px;

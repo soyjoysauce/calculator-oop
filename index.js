@@ -122,7 +122,7 @@ class CalculatorClass {
                     //if this is operator and there is something in the filter matching * or / and there is something in filter 2
                     if (isNaN(val) && addMinFilter.length >= 0) {
                         if(multiDivFilter[i] === val){
-                            let sum = calculate[val](x, y).toFixed(2);
+                            let sum = parseFloat(calculate[val](x, y));
                             inArr.splice(xPosition, 3, sum.toString());
                             i++;
                             console.log('((1)(*-))--inArr:', inArr);
@@ -130,7 +130,7 @@ class CalculatorClass {
                         //if val is operator and the fitst item in this filter is equal to val and var 'i' went thru the filter array
                         if (isNaN(val) && addMinFilter[j] === val && i === multiDivFilter.length) {
                             console.log('val2:', val);
-                            let sum = calculate[val](x, y).toFixed(2);
+                            let sum = calculate[val](x, y);
                             inArr.splice(xPosition, 3, sum.toString());
                             j++;
                             console.log('((2)(+-))--inArr1:', inArr);
@@ -140,7 +140,7 @@ class CalculatorClass {
                     //if there is operator and there is only + and - no multi div
                     if (isNaN(val) && addMinFilter[j] === val && multiDivFilter.length === 0) {
                         console.log('val2:', val);
-                        let sum = calculate[val](x, y).toFixed(2);
+                        let sum = calculate[val](x, y);
                         inArr.splice(xPosition, 3, sum.toString());
                         console.log('((3)just(+-))--inArr:', inArr);
                         return inArr;
