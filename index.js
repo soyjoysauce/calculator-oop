@@ -19,7 +19,7 @@ class CalculatorClass {
     applyClickHandlers(){
         $('.number_button').on('click', this.inputNumbers.bind(this));
         $('.operator_button').on('click', this.inputOperator.bind(this));
-        $('.decimal_button').on('click', this.addDecimal.bind(this));
+        $('.decimal_button').on('click', this.inputNumbers.bind(this));
         $('.equals_button').on('click', this.doMath.bind(this));
         $('.clear_reset').on('click', this.clearAll.bind(this));
         // $('.clear_entry').on('click', this.clearEntry.bind(this));
@@ -38,7 +38,11 @@ class CalculatorClass {
 
     inputNumbers() {
         let input = event.target.innerHTML;
-        this.inputArray[this.inputArray.length-1] += input;
+        let decimal_flag = true;
+
+        input === '.'? this.inputArray[this.inputArray.length-1] += input : 'no';
+        
+        // this.inputArray[this.inputArray.length-1] += input;
         this.displayValue();
         console.log('input:',input);
         console.log('inputNum called and inputArray is:',this.inputArray);
