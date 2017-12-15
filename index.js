@@ -24,7 +24,7 @@ class CalculatorClass {
         $('.clear_reset').on('click', this.clearAll.bind(this));
         // $('.clear_entry').on('click', this.clearEntry.bind(this));
     }
-
+    
     displayValue(inArr) {
         let displayArray = this.inputArray ;
         let resultArray = [inArr];
@@ -39,9 +39,7 @@ class CalculatorClass {
     inputNumbers() {
         let input = event.target.innerHTML;
         let decimal_flag = true;
-
-        input === '.'? this.inputArray[this.inputArray.length-1] += input : 'no';
-        
+        input === '.'? this.inputArray[this.inputArray.length-1] += input : 'no';  
         // this.inputArray[this.inputArray.length-1] += input;
         this.displayValue();
         console.log('input:',input);
