@@ -31,7 +31,7 @@ class CalculatorClass {
         console.log('inArr',inArr);
         let resultInput = resultArray.join("");
         let displayInput = displayArray.join("");
-        resultArray.length < 0 ? $('.calculated_result_screen').text(resultInput) : $('.calculated_result_screen').text(displayInput);
+        resultArray.length > 0 ? $('.calculated_result_screen').text(resultInput) : $('.calculated_result_screen').text(displayInput);
         console.log('display value called(displayArray):', displayArray);
         console.log('display value called(resultArray):', resultArray);
     }
@@ -41,7 +41,7 @@ class CalculatorClass {
         let decimal_flag = true;
         input === '.'? this.inputArray[this.inputArray.length-1] += input : 'no';  
         // this.inputArray[this.inputArray.length-1] += input;
-        this.displayValue();
+        this.displayValue(input);
         console.log('input:',input);
         console.log('inputNum called and inputArray is:',this.inputArray);
     }
