@@ -1,135 +1,125 @@
-
 body {
-    background-color: black;
-    text-align: center;
+  background-color: black;
+  text-align: center;
 }
 
 .calculator_body {
-    height: 550px;
+    height: 600px;
+    padding-top: 1%;
     border-radius: 25px;
-    background-color: #55B5B9;
+    background-color: #55b5b9;
 }
-.button_bodies{
-    display: inherit;
+.button_bodies {
+  display: inherit;
 }
 
 .number_container {
-    width: 55%;
-    height:350px;
-    margin: 0px 25px;
-    background-color: rgba(249,182,218,1);
-    float: left;
-    padding: 2px;
-    border-radius: 25px;
+  width: 55%;
+  height: 350px;
+  margin: 0px 25px;
+  background-color: rgba(249, 182, 218, 1);
+  float: left;
+  padding: 2px;
+  border-radius: 25px;
 }
-
+button {
+  width: 30%;
+  height: 23%;
+  border-radius: 25px;
+  font-size: medium;
+}
 .number_button {
-    background-color: rgba(239,243,128,1);
-    width: 30%;
-    height: 23%;
-    float: left;
-    margin-top: 5px;
-    margin-left: 6px;
-    border-radius: 25px;
-    font-size: 25px;
+  background-color: rgba(239, 243, 128, 1);
+  float: left;
+  margin-top: 5px;
+  margin-left: 6px;
+  font-size: medium;
 }
 .equals_button {
-    width: 30%;
-    height: 23%;
-    float: left;
-    margin-top: 5px;
-    margin-left: 6px;
-    border-radius: 25px;
-    font-size: 25px;
-    background-color: #9696F3;
+  float: left;
+  margin-top: 5px;
+  margin-left: 6px;
+  background-color: #9696f3;
+  font-size: medium;
 }
 
 .decimal_button {
-    margin: 5px;
-    float: right;
-    width: 30%;
-    height: 23%;
-    background-color: #9696F3;  
-    border-radius: 25px;
-    font-size: 25px;  
+  margin: 1%;
+  float: left;
+  background-color: #9696f3;
+  font-size: medium;
 }
 
 .column {
-    display: inline-grid;
-    margin-left: 10px;
+  display: inline-grid;
+  margin-left: 10px;
 }
 
 .clear_container {
-    display: flex;
-    height: 50px;
-    width:100px;
-    background-color: #0a2b1d;
-    float: right;
-    align-content: center;
-    border-radius: 25px;
+  display: flex;
+  height: 50px;
+  width: 100px;
+  background-color: #0a2b1d;
+  float: right;
+  align-content: center;
+  border-radius: 25px;
 }
 
 .clear_reset {
-    background-color:rgba(255,125,119,1);;
-    display:inline-block;
-    height: 50px;
-    width:50px;
-    font-size: 25px;
-    border-radius: 25px;
+  background-color: rgba(255, 125, 119, 1);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 25px;
 }
 
 .clear_entry {
-    background-color: #F9F65A;
-    display: inline-block;
-    height: 50px;
-    width:50px;
-    font-size: 25px;
-    border-radius: 25px;
+  background-color: #f9f65a;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 25px;
 }
 
 .operator_container {
-    height: 285px;
-    width: 80px;
-    background-color:rgba(85,85,173,1);;
-    margin-left: 5px;
-    float: right;
-    border-radius: 25px;
-    margin-top: 5px;
+  height: 285px;
+  width: 80px;
+  background-color: rgba(85, 85, 173, 1);
+  margin-left: 5px;
+  float: right;
+  border-radius: 25px;
+  margin-top: 5px;
 }
 
 .operator_button {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 25px;
-    font-size: 25px;
-    background-color: rgba(176,117,249,1);    
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: rgba(176, 117, 249, 1);
 }
-.calculated_result_screen {
-    padding: 0% 2%;
-    overflow: hidden;
-    display: block;
-    height: 130px;
-    width: inherit;
-    margin: 5%;
-    text-align: right;
-    background-color: #CDEEF0;
-    font-size: 50px;
-    border-radius: 25px;
-    border: 3px solid rgba(47,237,153,1);
+.div_calculated_result_screen {
+  padding: 0% 2%;
+  overflow: hidden;
+  display: block;
+  height: 120px;
+  width: inherit;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  text-align: right;
+  background-color: #cdeef0;
+  font-size: 50px;
+  border-radius: 25px;
+  border: 3px solid rgba(47, 237, 153, 1);
 }
 
 .display {
-    height:100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
-
-
-
-
-
-
-
-
-
